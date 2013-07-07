@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='../public/public.css' rel='stylesheet' media='screen'
+  </head>
+  <body>
+
+    <script src='../public/public.js'></script>
+
+    <script type='text/javascript'>
+      var mixin = require('ember-scroll');
+      var theme = 'light';
+      var spinner;
+      var color;
+      var fn = function(){
+        if (spinner){
+          spinner.hideSpinner();
+        }
+        if (theme == 'light'){
+          theme = 'dark';
+          color = '#fff';
+        } else {
+          theme = 'light';
+          color = '#222';
+        }
+        $('body').css({
+          background: color
+        });
+        spinner = Em.Object.createWithMixins(mixin, {theme: theme});
+        spinner.showSpinner();
+      }
+      fn();
+      setInterval(fn, 1000);
+    </script>
+  </body>
+</html>

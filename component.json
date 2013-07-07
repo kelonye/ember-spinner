@@ -1,0 +1,16 @@
+{
+  "name": "ember-spinner",
+  "version": "0.0.1",
+  "license": "MIT",
+  "dependencies": {
+    "kelonye/ember": "*",
+    "component/spinner": "*"
+  },
+  "main": "lib/index.js",
+  "scripts": [
+    "lib/index.js"
+  ],
+  "styles": [
+    "lib/style.css"
+  ]
+}
