@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "license": "MIT",
   "dependencies": {
-    "kelonye/ember": "*",
-    "component/spinner": "*"
+    "kelonye/ember": "1.0.0-rc6",
+    "component/spinner": "0.1.0"
   },
   "main": "lib/index.js",
   "scripts": [
