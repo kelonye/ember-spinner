@@ -1,6 +1,6 @@
 {
   "name": "ember-spinner",
-  "version": "0.0.3",
+  "private": true,
   "license": "MIT",
   "dependencies": {
     "component-hooks": "0.1.9"
